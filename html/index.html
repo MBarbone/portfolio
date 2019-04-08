@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="../css/styles/css/swipebox.css">
 
     <!-- Custom Fonts -->
-    <link href="../css/styles/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome-4.1.0/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,900,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Mrs+Sheppards' rel='stylesheet' type='text/css'>
@@ -82,11 +82,14 @@
     <!-- End of Navigation -->
 
     <!-- Header -->
-    <header style="background:url(../css/img/keyboard.jg)">
+    <header>
 
-        <video autoplay muted loop id="myVideo">
-                <source src="../css/img/Waves.mp4" type="video/mp4">
-              </video>
+        <div class="videoUiWrapper">
+                <div class="video-screen"></div>
+                <video class="embed-responsive-item"  loop muted autoplay width="100%" height="auto" id="demo1">
+                    <source src="../css/img/Waves.mp4" type='video/mp4' />
+                </video>
+            </div>
 
         <div class="container-fluid cover-page">
             <div class="row">
@@ -535,6 +538,9 @@
     <!--  Sliding settting -->
     <script src="../js/jquery.tabSlideOut.v1.3.js"></script>
     <script src='../js/scrollReveal.js'></script>
+
+    <link href="http://vjs.zencdn.net/4.10/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/4.10/video.js"></script>
 
 
 
