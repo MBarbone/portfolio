@@ -26,6 +26,15 @@ body {
     width: 100%;
     height: 100%;
 }
+
+.enter-btn:hover{
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background-color:#8c734b;
+    color: #000;
+    border: 1px solid white;
+}
+
 a {
     color: #999!important;
     text-decoration: none!important;
