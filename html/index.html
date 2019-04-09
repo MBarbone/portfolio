@@ -70,6 +70,10 @@
                     </li>
 
                     <li class="page-scroll">
+                        <a href="#blog">Blog</a>
+                    </li>
+
+                    <li class="page-scroll">
                         <a href="#contact">Contact</a>
                     </li>
 
@@ -110,9 +114,8 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/eoK4i0SU3DA"></iframe>
-                    </div> -->
+        <!-- end of cover-page div -->
+        
     </header>
     <!-- End of Header -->
 
@@ -240,7 +243,7 @@
 
 
     <!-- Skill Section -->
-    <section class="e-campuz" id="pricing">
+    <section class="e-campuz">
         <div class="arrow-down-white"></div>
         <div class="ray-top ray1"></div>
         <div class="ray-top ray2"></div>
@@ -287,8 +290,6 @@
                                 <p>THis is a skill I am good at. look at me go. wahh
                                 </p>
                             </div>
-
-                        
                     </div>
 
                     <!-- Code Start -->
@@ -350,7 +351,6 @@
 
             <div class="row">
                 <div class="col-md-12">
-
                     <div id="portfoliolist">
 
                         <div class="portfolio logo" data-cat="logo">
@@ -386,7 +386,6 @@
                                 </div>
                             </div>
                         </div>
-
 
                         <div class="portfolio card" data-cat="card">
                             <div class="portfolio-wrapper">
@@ -431,8 +430,8 @@
     </section>
     <!-- End of Portfolio Section -->
 
-      <!-- Skill Section -->
-      <section class="e-campuz" id="pricing">
+     <!-- Skill Section -->
+     <section class="e-campuz" id="pricing">
             <div class="arrow-down-white"></div>
             <div class="ray-top ray1"></div>
             <div class="ray-top ray2"></div>
@@ -443,20 +442,17 @@
                     <div class="col-md-12">
                         <div class="title-overview">
                             <h2>
-                                <span class="border-white">Latest Posts</span>
+                                <span class="border-white">Blog</span>
                             </h2>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
-         
+        
             <div class="ray-bottom ray1"></div>
             <div class="ray-bottom ray2"></div>
             <div class="ray-bottom ray3"></div>
         </section>
-        <!-- End of Blog Section -->
-
-
 
     <!-- Footer -->
     <footer id="contact" class="text-center footer-above">
@@ -565,72 +561,5 @@
                 }, 500);
             });</script>
 
-
-
-    <script type="text/javascript">
-    $(function() {
-        //lightbox 
-        $('.swipebox').swipebox();
-        //filtered portfolio
-        var filterList = {
-            init: function() {
-                // MixItUp plugin
-                // http://mixitup.io
-                $('#portfoliolist').mixitup({
-                    targetSelector: '.portfolio',
-                    filterSelector: '.filter',
-                    effects: ['fade'],
-                    easing: 'snap',
-                    // call the hover effect
-                    onMixEnd: filterList.hoverEffect()
-                });
-
-            },
-
-            hoverEffect: function() {
-
-                // Simple parallax effect
-                $('#portfoliolist .portfolio').hover(
-                    function() {
-                        $(this).find('.label').stop().animate({
-                            bottom: 0
-                        }, 200, 'easeOutQuad');
-                        $(this).find('img').stop().animate({
-                            top: -30
-                        }, 500, 'easeOutQuad');
-                    },
-                    function() {
-                        $(this).find('.label').stop().animate({
-                            bottom: -40
-                        }, 200, 'easeInQuad');
-                        $(this).find('img').stop().animate({
-                            top: 0
-                        }, 300, 'easeOutQuad');
-                    }
-                );
-
-            }
-
-        };
-
-        // Run the show!
-        filterList.init();
-        //slide out panel
-        $('.slide-out-div').tabSlideOut({
-            tabHandle: '.handle', //class of the element that will be your tab
-            pathToTabImage: '<i class="icon-phone"></i>', //path to the image for the tab (optionaly can be set using css)
-            imageHeight: '40px', //height of tab image
-            imageWidth: '40px', //width of tab image    
-            tabLocation: 'right', //side of screen where tab lives, top, right, bottom, or left
-            speed: 300, //speed of animation
-            action: 'click', //options: 'click' or 'hover', action to trigger animation
-            topPos: '200px', //position from the top
-            fixedPosition: true //options: true makes it stick(fixed position) on scroll
-        });
-
-    });
-    </script>
-
 </body>
-
 </html>
